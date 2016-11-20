@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wan3456_top_bg" 
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/wan3456_pay_web_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="12dip"
+            android:layout_marginTop="12dip"
+            android:text="@string/wan3456_t_payunion_web_title"
+            android:textColor="@color/wan3456_white"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/wan3456_pay_web_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/wan3456_seletor_back_btn"
+            android:gravity="center"
+            android:text="@string/wan3456_t_back"
+            android:textColor="@color/wan3456_white"
+            android:textSize="16.0sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/wan3456_pay_web_exsit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/wan3456_seletor_btn1"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingTop="5dip"
+            android:text="@string/wan3456_t_backgame"
+            android:textColor="@color/wan3456_white"
+            android:textSize="16.0sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/wan3456_union_web_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:progressDrawable="@drawable/wan3456_progressbar_bg"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/wan3456_union_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

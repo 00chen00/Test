@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+   <LinearLayout
+       android:id="@+id/wan3456_findaccount_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/wan3456_dialog_bg"
+        android:orientation="vertical"
+        android:paddingLeft="15dip"
+        android:paddingTop="15dip"
+        android:paddingRight="15dip"
+        android:paddingBottom="10dip"
+        android:gravity="center_horizontal"  
+  >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:background="@drawable/wan3456_login_icon" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="0dip" >
+
+        <EditText
+            android:id="@+id/wan3456_findpass_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@+id/wan3456_findpass_getcode"
+            android:background="@drawable/wan3456_edit_bg"
+            android:digits="0123456789"
+            android:hint="@string/wan3456_t_find_user_hint"
+            android:inputType="number"
+              android:imeOptions="actionDone"
+            android:maxLength="11"
+            android:paddingLeft="3dip"
+            android:textColor="@color/wan3456_detail_c1"
+            android:textColorHint="@color/wan3456_detail_c4"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/wan3456_findpass_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/wan3456_seletor_btn2"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="@string/wan3456_t_getcode"
+            android:textColor="@color/wan3456_black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/wan3456_findpass_wcode"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/wan3456_edit_bg"
+        android:digits="0123456789"
+        android:hint="@string/wan3456_t_find_code_hint"
+        android:inputType="number"
+         android:imeOptions="actionDone"
+        android:maxLength="6"
+        android:paddingLeft="3dip"
+        android:textColor="@color/wan3456_detail_c1"
+        android:textColorHint="@color/wan3456_detail_c4"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/wan3456_findpass_newpass"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginBottom="7dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/wan3456_edit_bg"
+        android:imeOptions="actionDone"
+        android:hint="@string/wan3456_t_find_newpass_hint"
+     android:maxLength="20"
+        android:paddingLeft="3dip"
+        android:textColor="@color/wan3456_detail_c1"
+        android:textColorHint="@color/wan3456_detail_c4"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/wan3456_to_ser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dip"
+        android:layout_marginLeft="10dip"
+        android:text="@string/wan3456_t_nobind"
+        android:textColor="@color/wan3456_detail_c4"
+        android:textSize="13sp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/wan3456_findpass_confirm"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/wan3456_seletor_btn"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/wan3456_t_ok"
+            android:textColor="@color/wan3456_white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/wan3456_findpass_back"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/wan3456_seletor_btn1"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/wan3456_t_back"
+            android:textColor="@color/wan3456_white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+ </LinearLayout>
+
+</RelativeLayout>

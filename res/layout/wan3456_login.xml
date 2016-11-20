@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/wan3456_login_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/wan3456_dialog_bg"
+        android:orientation="vertical"
+        android:paddingLeft="15dip"
+        android:paddingTop="15dip"
+        android:paddingRight="15dip"
+        android:paddingBottom="10dip"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/wan3456_login_view"
+            layout="@layout/wan3456_view_login"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/wan3456_regist_view"
+            layout="@layout/wan3456_view_regist"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/wan3456_findpass_view"
+            layout="@layout/wan3456_view_findpass"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

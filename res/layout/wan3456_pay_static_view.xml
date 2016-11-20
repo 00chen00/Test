@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wan3456_dialog_bg3"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:text="@string/wan3456_t_paystatic_title"
+        android:textColor="@color/wan3456_orange"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.01dip"
+        android:background="@color/wan3456_gainsboro" />
+
+    <TextView
+        android:id="@+id/wan3456_paystatic_mes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+         android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:gravity="center"
+        android:textColor="@color/wan3456_detail_c3"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.01dip"
+        android:background="@color/wan3456_gainsboro" />
+
+    <Button
+        android:id="@+id/wan3456_paystatic_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wan3456_selector_pay_static_btn"
+        android:gravity="center"
+        android:padding="10dip"
+    
+        android:text="@string/wan3456_t_backgame"
+        android:textColor="@color/wan3456_orange"
+        android:textSize="16sp" />
+
+</LinearLayout>

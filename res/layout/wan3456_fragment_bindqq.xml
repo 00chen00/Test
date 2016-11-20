@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/wan3456_detail_c2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wan3456_top_bg" >
+
+        <Button
+            android:id="@+id/wan3456_bindpqq_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+             android:background="@drawable/wan3456_selector_back"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="15dip"
+            android:gravity="center"
+            android:text="@string/wan3456_t_bind_qq"
+            android:textColor="@color/wan3456_white"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/wan3456_hasbang_qq_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+       android:layout_marginLeft="10dip"
+        android:textColor="@color/wan3456_red"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip" >
+
+            <EditText
+                android:id="@+id/wan3456_bindqq_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/wan3456_bindqq_submit"
+                android:background="@drawable/wan3456_edit_bg_selector"
+                android:digits="0123456789"
+                android:hint="@string/wan3456_t_bindqq_hint"
+                android:inputType="number"
+                android:maxLength="15"
+                android:paddingLeft="5dip"
+                android:textColor="@color/wan3456_edit_selector_color"
+                android:textColorHint="@color/wan3456_detail_c4" />
+
+            <Button
+                android:id="@+id/wan3456_bindqq_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/wan3456_seletor_btn1"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="@string/wan3456_t_bindqq_text"
+                android:textColor="@color/wan3456_white"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

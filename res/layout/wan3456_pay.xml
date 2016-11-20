@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/wan3456_detail_c2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/wan3456_pay_re_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wan3456_top_bg" >
+
+        <TextView
+            android:id="@+id/wan3456_web_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="12dip"
+            android:layout_marginTop="12dip"
+            android:text="@string/wan3456_t_pay_title"
+            android:textColor="@color/wan3456_white"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/wan3456_pay_exsit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/wan3456_selector_cancel" />
+
+        <Button
+            android:id="@+id/wan3456_pay_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/wan3456_pay_more_bg" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/wan3456_pay_line"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+               
+                android:background="@color/wan3456_detail_c5"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/wan3456_pay_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@color/wan3456_detail_c1"
+                android:dividerHeight="0.6dip"
+                android:listSelector="#00000000" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/wan3456_pay_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8dip"
+           
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/wan3456_pay_scroll"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/wan3456_pay_btn" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <include
+                        android:id="@+id/wan3456_paymes_show_line"
+                        layout="@layout/wan3456_paymes_show_view"
+                        android:visibility="visible" />
+
+                    <include
+                        android:id="@+id/wan3456_pay_alipay_lin"
+                        layout="@layout/wan3456_pay_alipay_view"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/wan3456_pay_union_lin"
+                        layout="@layout/wan3456_pay_union_view"
+                        android:visibility="gone" />
+                        <include
+                        android:id="@+id/wan3456_pay_wx_lin"
+                        layout="@layout/wan3456_pay_wx_view"
+                        android:visibility="gone" />
+                           <include
+                        android:id="@+id/wan3456_pay_yl_lin"
+                        layout="@layout/wan3456_pay_yl_view"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/wan3456_pay_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dip"
+                android:layout_marginRight="8.0dp"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/wan3456_seletor_btn"
+                android:gravity="center"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:textColor="@color/wan3456_white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

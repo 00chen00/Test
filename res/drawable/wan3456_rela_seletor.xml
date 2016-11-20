@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/wan3456_dialog_bg" android:state_pressed="true"/>
+    <item android:drawable="@drawable/wan3456_line_exisit_bg"/>
+
+</selector>

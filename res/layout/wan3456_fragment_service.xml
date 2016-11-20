@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/wan3456_detail_c2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wan3456_top_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="12dip"
+            android:layout_marginTop="12dip"
+            android:gravity="center"
+            android:text="@string/wan3456_t_service"
+            android:textColor="@color/wan3456_white"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/wan3456_service_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/wan3456_seletor_btn1"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingTop="5dip"
+            android:text="@string/wan3456_t_close"
+            android:textColor="@color/wan3456_white"
+            android:textSize="15.0sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/wan3456_service_qq_re"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10.0dp"
+        android:background="@drawable/wan3456_ac_seletor"
+        android:paddingBottom="15dip"
+        android:paddingTop="15dip" >
+
+        <ImageView
+            android:id="@+id/wan3456_service_qq_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/wan3456_service_toqq_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/wan3456_service_qq_img"
+            android:text="@string/wan3456_t_service_qq"
+            android:textColor="@color/wan3456_detail_c4"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/wan3456_to" />
+    </RelativeLayout>
+    
+        <RelativeLayout
+        android:id="@+id/wan3456_service_online_re"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10.0dp"
+        android:background="@drawable/wan3456_ac_seletor"
+        android:paddingBottom="15dip"
+        android:paddingTop="15dip" >
+
+        <ImageView
+            android:id="@+id/wan3456_service_online_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/wan3456_service_online_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/wan3456_service_online_img"
+            android:text="@string/wan3456_t_service_online"
+            android:textColor="@color/wan3456_detail_c4"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/wan3456_to" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

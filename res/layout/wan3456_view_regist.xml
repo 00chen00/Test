@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+   <LinearLayout
+       android:id="@+id/wan3456_register_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/wan3456_dialog_bg"
+        android:orientation="vertical"
+        android:paddingLeft="15dip"
+        android:paddingTop="15dip"
+        android:paddingRight="15dip"
+        android:paddingBottom="10dip"
+        android:gravity="center_horizontal"  
+  >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/wan3456_login_icon" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/wan3456_edit_bg" >
+
+        <TextView
+            android:id="@+id/wan3456_re_account_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:text="@string/wan3456_t_user"
+            android:textColor="@color/wan3456_white"
+            android:textSize="@dimen/wan3456_textsize4" />
+
+        <EditText
+            android:id="@+id/wan3456_regist_account"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="3dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="3dip"
+            android:layout_toLeftOf="@+id/wan3456_regist_account_clear"
+            android:layout_toRightOf="@+id/wan3456_re_account_tag"
+            android:background="@color/wan3456_detail_c3"
+            android:hint="@string/wan3456_t_re_user_hint"
+            android:maxLength="18"
+            android:paddingLeft="1dip"
+            android:textColor="@color/wan3456_detail_c1"
+            android:textColorHint="@color/wan3456_detail_c4"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/wan3456_regist_account_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/wan3456_input_icon_clear"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/wan3456_edit_bg" >
+
+        <TextView
+            android:id="@+id/wan3456_re_pass_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:text="@string/wan3456_t_pass"
+            android:textColor="@color/wan3456_white"
+            android:textSize="@dimen/wan3456_textsize4" />
+
+        <EditText
+            android:id="@+id/wan3456_regist_pass"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="3dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="3dip"
+            android:layout_toLeftOf="@+id/wan3456_regist_pass_clear"
+            android:layout_toRightOf="@+id/wan3456_re_pass_tag"
+            android:background="@color/wan3456_detail_c3"
+            android:hint="@string/wan3456_t_re_pass_hint"
+            android:maxLength="20"
+            android:paddingLeft="1dip"
+            android:textColor="@color/wan3456_detail_c1"
+            android:textColorHint="@color/wan3456_detail_c4"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/wan3456_regist_pass_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/wan3456_input_icon_clear"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/wan3456_regist_agreement_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/wan3456_re_checked" />
+
+        <TextView
+            android:id="@+id/wan3456_regist_agreement_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/wan3456_regist_agreement_check"
+            android:text="@string/wan3456_t_ag_title"
+            android:textColor="@color/wan3456_detail_c4"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dip"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/wan3456_regist_confirm"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/wan3456_seletor_btn"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/wan3456_t_toregister"
+            android:textColor="@color/wan3456_white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/wan3456_regist_fast"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/wan3456_seletor_btn1"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/wan3456_t_fast_register"
+            android:textColor="@color/wan3456_white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/wan3456_goback_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dip"
+            android:background="@null"
+            android:drawableLeft="@drawable/wan3456_goback"
+            android:drawablePadding="3dip"
+            android:text="@string/wan3456_t_back_login"
+            android:textColor="@color/wan3456_white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+ </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/wan3456_detail_c2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wan3456_top_bg" >
+
+        <Button
+            android:id="@+id/wan3456_changepass_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/wan3456_selector_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="15dip"
+            android:gravity="center"
+            android:text="@string/wan3456_t_modify_title"
+            android:textColor="@color/wan3456_white"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/wan3456_changepass_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/wan3456_seletor_btn1"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:text="@string/wan3456_t_confirm"
+            android:textColor="@color/wan3456_white"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/wan3456_changepass_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:textSize="16.0sp" />
+
+    <LinearLayout
+        android:id="@+id/wan3456_account_changepass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/wan3456_changepass_curpass"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/wan3456_dialog_bg1"
+            android:hint="@string/wan3456_t_modify_ohint"
+            android:maxLength="20"
+            android:paddingLeft="2dip"
+            android:textColor="@color/wan3456_detail_c3"
+            android:textColorHint="@color/wan3456_detail_c4" />
+
+        <EditText
+            android:id="@+id/wan3456_changepass_newpass"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/wan3456_dialog_bg1"
+            android:hint="@string/wan3456_t_modify_nhint"
+            android:maxLength="20"
+            android:paddingLeft="2dip"
+            android:textColor="@color/wan3456_detail_c3"
+            android:textColorHint="@color/wan3456_detail_c4" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/wan3456_changepass_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/wan3456_t_modify_notice"
+        android:textColor="@color/wan3456_detail_c6"
+        android:textSize="15.0sp" />
+
+</LinearLayout>

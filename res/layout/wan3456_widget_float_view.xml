@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp" >
+
+    <LinearLayout
+        android:id="@+id/wan3456_float_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/wan3456_menu_bg"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/wan3456_float_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/wan3456_f_seletor"
+            android:drawableTop="@drawable/wan3456_float_icon1"
+            android:padding="3dip"
+            android:text="@string/wan3456_t_float_u"
+            android:textColor="@color/wan3456_detail_c1"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:id="@+id/wan3456_float_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wan3456_f_seletor"
+                android:drawableTop="@drawable/wan3456_float_icon2"
+                android:padding="3dip"
+                android:text="@string/wan3456_t_float_gift"
+                android:textColor="@color/wan3456_detail_c1"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/wan3456_float_gift_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/wan3456_red_point"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/wan3456_float_sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wan3456_f_seletor"
+                android:drawableTop="@drawable/wan3456_float_icon3"
+                android:padding="3dip"
+                android:text="@string/wan3456_t_float_ac"
+                android:textColor="@color/wan3456_detail_c1"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/wan3456_float_sp_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/wan3456_red_point"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/wan3456_float_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wan3456_f_seletor"
+                android:drawablePadding="2dip"
+                android:drawableTop="@drawable/wan3456_float_icon8"
+                android:padding="3dip"
+                android:text="@string/wan3456_t_float_xx"
+                android:textColor="@color/wan3456_detail_c1"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/wan3456_red_point"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/wan3456_float_tj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wan3456_f_seletor"
+                android:drawablePadding="2dip"
+                android:drawableTop="@drawable/wan3456_float_icon6"
+                android:padding="3dip"
+                android:text="@string/wan3456_t_float_tj"
+                android:textColor="@color/wan3456_detail_c1"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/wan3456_float_tj_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/wan3456_red_point"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/wan3456_float_kf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wan3456_f_seletor"
+                android:drawableTop="@drawable/wan3456_float_icon7"
+                android:padding="3dip"
+                android:text="@string/wan3456_t_pay_ser"
+                android:textColor="@color/wan3456_detail_c1"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/wan3456_float_kf_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/wan3456_red_point"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/wan3456_float_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/wan3456_f_seletor"
+            android:drawableTop="@drawable/wan3456_float_icon5"
+            android:padding="3dip"
+            android:text="@string/wan3456_t_float_quit"
+            android:textColor="@color/wan3456_detail_c1"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/wan3456_float_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/wan3456_float_view_icon_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/wan3456_image_float_logo" />
+
+        <ImageView
+            android:id="@+id/wan3456_float_view_icon_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wan3456_anim_background" />
+    </FrameLayout>
+
+</FrameLayout>

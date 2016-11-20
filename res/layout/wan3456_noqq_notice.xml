@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wan3456_dialog_bg1"
+    android:orientation="vertical"
+    android:padding="10.0dip">
+    
+  <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:textColor="@color/wan3456_detail_c3"
+        android:textSize="18.0sp"
+        android:id="@+id/wan3456_noqq_mes" />
+    <TextView
+        android:id="@+id/wan3456_noqq_close"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/wan3456_seletor_btn"
+        android:gravity="center"
+        android:padding="5dip"
+        android:text="@string/wan3456_t_ok"
+        android:textColor="@color/wan3456_white"
+        android:textSize="20sp"
+        android:visibility="visible" />
+</LinearLayout>

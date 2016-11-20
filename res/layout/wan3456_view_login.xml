@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+   <LinearLayout
+       android:id="@+id/wan3456_login_manual_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/wan3456_dialog_bg"
+        android:orientation="vertical"
+        android:paddingLeft="15dip"
+        android:paddingTop="15dip"
+        android:paddingRight="15dip"
+        android:paddingBottom="10dip"
+        android:gravity="center_horizontal"  
+  >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/wan3456_login_icon" />
+
+    <RelativeLayout
+        android:id="@+id/wan3456_login_manual_name_line"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip" 
+        android:background="@drawable/wan3456_edit_bg" >
+
+        <TextView
+            android:id="@+id/wan3456_login_account_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:text="@string/wan3456_t_user"
+            android:textColor="@color/wan3456_white"
+            android:textSize="@dimen/wan3456_textsize4" />
+
+        <EditText
+            android:id="@+id/wan3456_login_account"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="3dip"
+            android:layout_toLeftOf="@+id/wan3456_login_account_more"
+            android:layout_toRightOf="@+id/wan3456_login_account_tag"
+            android:background="@color/wan3456_detail_c3"
+            android:hint="@string/wan3456_t_user_hint"
+            android:imeOptions="actionNext"
+            android:maxLength="18"
+            android:padding="1dip"
+            android:textColor="@color/wan3456_detail_c1"
+            android:textColorHint="@color/wan3456_detail_c4"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/wan3456_login_account_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:background="@color/wan3456_detail_c3"
+            android:src="@drawable/wan3456_more_press" />
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:id="@+id/wan3456_login_manual_pwd_line"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/wan3456_edit_bg" >
+
+        <TextView
+            android:id="@+id/wan3456_login_pass_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:text="@string/wan3456_t_pass"
+            android:textColor="@color/wan3456_white"
+            android:textSize="@dimen/wan3456_textsize4" />
+
+        <EditText
+            android:id="@+id/wan3456_login_pass"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="3dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="3dip"
+            android:layout_toLeftOf="@+id/wan3456_login_pass_see"
+            android:layout_toRightOf="@+id/wan3456_login_pass_tag"
+            android:background="@color/wan3456_detail_c3"
+            android:hint="@string/wan3456_t_pass_hint"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="1dip"
+            android:textColor="@color/wan3456_detail_c1"
+            android:textColorHint="@color/wan3456_detail_c4"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/wan3456_login_pass_see"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:background="@color/wan3456_detail_c3"
+            android:src="@drawable/wan3456_pwd_nosee" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/wan3456_login_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/wan3456_re_check" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/wan3456_login_remember"
+            android:text="@string/wan3456_t_remember"
+            android:textColor="@color/wan3456_detail_c4"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/wan3456_login_findpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/wan3456_t_find_pass"
+            android:textColor="@color/wan3456_detail_c4"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip" >
+
+        <Button
+            android:id="@+id/wan3456_login_login"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dp"
+            android:layout_weight="1"
+            android:background="@drawable/wan3456_seletor_btn"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/wan3456_t_login"
+            android:textColor="@color/wan3456_white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/wan3456_login_regist"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/wan3456_seletor_btn1"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/wan3456_t_toregister"
+            android:textColor="@color/wan3456_white"
+            android:textSize="20sp" />
+    </LinearLayout>
+ </LinearLayout>
+
+</RelativeLayout>

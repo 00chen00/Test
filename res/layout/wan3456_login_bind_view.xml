@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/wan3456_detail_c2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wan3456_top_bg" >
+
+        <Button
+            android:id="@+id/wan3456_login_bindphone_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dip"
+            android:background="@drawable/wan3456_selector_cancel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="15dip"
+            android:text="@string/wan3456_t_bind"
+            android:textColor="@color/wan3456_white"
+            android:textSize="21.0sp" />
+
+        <Button
+            android:id="@+id/wan3456_login_bindphone_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/wan3456_seletor_btn"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:text="@string/wan3456_t_confirm"
+            android:textColor="@color/wan3456_white"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/wan3456_login_bindphone_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:textSize="16.0sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip" >
+
+            <EditText
+                android:id="@+id/wan3456_login_bindphone_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/wan3456_login_bindphone_getcode"
+                android:background="@drawable/wan3456_dialog_bg1"
+                android:digits="0123456789"
+                android:hint="@string/wan3456_t_phone_hint"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="3dip"
+                android:textColor="@color/wan3456_detail_c3"
+                android:textColorHint="@color/wan3456_detail_c4" />
+
+            <Button
+                android:id="@+id/wan3456_login_bindphone_getcode"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="3dip"
+                android:background="@drawable/wan3456_seletor_btn2"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="@string/wan3456_t_getcode"
+                android:textColor="@color/wan3456_black"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/wan3456_login_bindphone_code"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/wan3456_dialog_bg1"
+            android:hint="@string/wan3456_t_code_hint"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="3dip"
+            android:textColor="@color/wan3456_detail_c3"
+            android:textColorHint="@color/wan3456_detail_c4" />
+    </LinearLayout>
+
+</LinearLayout>

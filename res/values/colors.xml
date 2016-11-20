@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="wan3456_white">#ffffff</color>
+    <color name="wan3456_ivory">#fffff0</color>
+    <color name="wan3456_orange">#ffa500</color>
+    <color name="wan3456_red">#ff0000</color>
+    <color name="wan3456_violet">#ee82ee</color>
+    <color name="wan3456_gainsboro">#dcdcdc</color>
+    <color name="wan3456_gray">#808080</color>
+    <color name="wan3456_green">#008000</color>
+    <color name="wan3456_black">#000000</color>
+    <color name="wan3456_mc1">#ae9b97</color>
+    <color name="wan3456_dialog">#4d0805</color>
+    <color name="wan3456_other">#b4000000</color>
+    <color name="wan3456_bg">#3d2827</color>
+    <color name="wan3456_blue_other">#0285d6</color>
+    <color name="wan3456_detail_c1">#ffb443</color>
+    <color name="wan3456_detail_c2">#e7e7e7</color>
+    <color name="wan3456_detail_c3">#333333</color>
+    <color name="wan3456_detail_c4">#666666</color>
+    <color name="wan3456_detail_c5">#fffced</color>
+    <color name="wan3456_detail_c6">#ff6600</color>
+<color name="wan3456_tm">#00000000</color><!--透明 --> 
+</resources>

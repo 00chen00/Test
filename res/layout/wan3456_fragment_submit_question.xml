@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      android:background="@drawable/wan3456_top_bg" >
+
+        <TextView
+            android:id="@+id/wan3456_submit_qt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="12dip"
+            android:layout_marginTop="12dip"
+            android:textColor="@color/wan3456_white"
+            android:text="@string/wan3456_t_submit_question"
+            android:textSize="20.0sp" />
+  <Button
+            android:id="@+id/wan3456_fra_submit_qt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/wan3456_seletor_back_btn"
+         
+            android:gravity="center"
+            android:text="@string/wan3456_t_back"
+            android:textSize="16.0sp" 
+            android:textColor="@color/wan3456_white"
+          />
+   
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/wan3456_submit_qt_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:progressDrawable="@drawable/wan3456_progressbar_bg"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/wan3456_submit_qt_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

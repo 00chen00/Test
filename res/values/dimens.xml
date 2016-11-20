@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="wan3456_pay_name_textsize">14sp</dimen>
+    <dimen name="wan3456_textsize1">14sp</dimen>
+    <dimen name="wan3456_textsize2">15sp</dimen>
+    <dimen name="wan3456_textsize3">16sp</dimen>
+    <dimen name="wan3456_textsize4">17sp</dimen>
+    <dimen name="wan3456_textsize5">22sp</dimen>
+    <dimen name="wan3456_size_left">8dip</dimen>
+    <dimen name="wan3456_size_right">5dip</dimen>
+    <dimen name="wan3456_size_bottom">14dip</dimen>
+
+</resources>

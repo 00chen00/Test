@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/wan3456_detail_c2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wan3456_top_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="15dip"
+            android:gravity="center"
+            android:text="@string/wan3456_t_account_center"
+            android:textColor="@color/wan3456_white"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/wan3456_account_backtogame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+                android:background="@drawable/wan3456_selector_cancel"
+       />
+    </RelativeLayout>
+
+    <com.wan3456.sdk.view.ScrollViewExtend
+        android:id="@+id/wan3456_fra_srcollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/wan3456_white"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="20dip" >
+
+                <ImageView
+                    android:id="@+id/wan3456_account_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5.0dp"
+                    android:src="@drawable/wan3456_info_icon" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/wan3456_account_switch"
+                    android:layout_toRightOf="@+id/wan3456_account_icon"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/wan3456_account_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wan3456_t_account_pt"
+                        android:textColor="@color/wan3456_detail_c6"
+                        android:textSize="20.0sp" />
+
+                    <TextView
+                        android:id="@+id/wan3456_account_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/wan3456_account_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"                   
+                    android:background="@drawable/wan3456_seletor_switch_btn"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="10dip"
+                    android:text="@string/wan3456_t_auto_text"
+                    android:textColor="@color/wan3456_detail_c6"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <com.wan3456.sdk.view.MyGridView
+                android:id="@+id/wan3456_fra_account_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:columnWidth="0.5dip"
+                android:fadingEdge="none"
+                android:gravity="center"
+                android:horizontalSpacing="0.8dip"
+                android:listSelector="@color/wan3456_detail_c2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0.8dip" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                android:layout_marginTop="40dip"
+                android:gravity="center"
+                android:text="@string/wan3456_t_account_bottom"
+                android:textSize="@dimen/wan3456_size_bottom" />
+        </LinearLayout>
+    </com.wan3456.sdk.view.ScrollViewExtend>
+
+</LinearLayout>
